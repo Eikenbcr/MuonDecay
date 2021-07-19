@@ -4,7 +4,7 @@
 #include "TTree.h"
 #include "TSystem.h"
 
-void testcsv() {
+void csv2root() {
 
    TString dir = gSystem->UnixPathName(__FILE__);
    dir.ReplaceAll("UScsvToRoot.C","");
