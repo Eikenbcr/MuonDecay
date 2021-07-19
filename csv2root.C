@@ -12,6 +12,6 @@ void csv2root() {
 
    TFile *f = new TFile("MuonData.root","RECREATE");
    TTree *tree = new TTree("ntuple","data from csv file");
-   tree->ReadFile("RealData.csv","Muon/I",',');
+   tree->ReadFile("RealData.csv","RealData/I",',');
    f->Write();
  }
